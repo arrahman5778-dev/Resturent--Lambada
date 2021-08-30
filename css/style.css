@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.clr {
+    clear: both;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+               Menu Part Start
+========================================= */
+#menu {
+    padding: 10px 0;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+
+.menu_count {
+
+    display: flex;
+}
+
+.logo {
+    width: 170px;
+}
+
+.main_menu {
+    width: 910px;
+}
+
+.main_menu ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main_menu ul li a {
+    color: #ffff;
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'Gentium Book Basic', serif;
+    line-height: 90px;
+    margin-left: 50px;
+}
+
+.menu_icon {
+    width: 120px;
+    text-align: right;
+
+}
+
+.menu_icon a {
+    color: #dab33e;
+    font-size: 16px;
+    margin-left: 16px;
+    line-height: 90px;
+
+}
+
+/* =========================================
+               Menu Part End
+========================================= */
+
+/* =========================================
+               Banner Part Start
+========================================= */
+#banner {
+    padding: 140px 0 240px;
+    background: url(../images/banner_1.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.banner_text {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.banner_text h1 {
+    color: #ffff;
+    font-size: 90px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+    margin-bottom: 110px;
+    text-transform: lowercase;
+    position: relative;
+}
+
+/* .shape_img{
+    margin-bottom: 34px;
+} */
+.banner_text h1::after {
+    position: absolute;
+    content: '';
+    background: url(../images/banner_shape.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    left: 38%;
+    top: 115%;
+
+}
+
+.banner_text a {
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    background: rgba(255, 255, 255, 0.28);
+    border: 1px solid #ffff;
+    margin: 0 15px;
+    padding: 20px 50px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    position: relative;
+    z-index: 999;
+
+}
+
+.banner_text a:hover {
+    background: rgba(0, 0, 0, 0.28);
+    border: 1px solid rgb(3, 3, 3);
+}
+
+/* =========================================
+               Banner Part end
+========================================= */
+
+
+/* =========================================
+               food Part Start
+========================================= */
+#food {
+    padding: 88px;
+    background: url(../images/banner_2.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.food_count {
+    display: flex;
+    text-align: center;
+}
+
+.food_text h2 {
+
+    color: #cc9900;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+
+    margin-bottom: 80px;
+}
+
+.food_text p {
+    width: 430px;
+    color: #4c4c4c;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 52px;
+}
+
+.dish_img img {
+    width: 100%;
+}
+
+/* =========================================
+               food Part End
+========================================= */
+
+
+/* =========================================
+               Ingredients Part Start
+========================================= */
+#ingre {
+    padding: 100px 0;
+    background: url(../images/banner_3.jpg) no-repeat center;
+    background-size: cover;
+}
+.ingre_count {
+    display: flex;
+    justify-content: flex-end;
+}
+.ingre_row {
+    padding: 80px;
+    background: rgba(0, 0, 0, 0.67);
+}
+.ingre_text{
+    width: 430px;
+    text-align: center;
+}
+.ingre_text h2{
+    color: #ffff;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+    padding-bottom: 16px;
+}
+.ingre_text p{
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Lato', sans-serif;
+    padding: 30px 0 70px;
+}
+.ingre_row_btm{
+    display: flex;
+    justify-content: center;
+}
+.ingre_img{
+    margin: 0 15px;
+}
+/* =========================================
+               Ingredients Part End
+========================================= */
+
+
+/* =========================================
+               Price Part Start
+========================================= */
+#price{
+    padding: 100px 0;
+    background: url(../images/banner_2.jpg) no-repeat center/cover;
+}
+.price_cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+.price_col{
+    min-width: 50%;
+}
+.price_text{
+    width: 430px;
+}
+.price_text h2{
+    font-size: 36px;
+    color: #cc9900;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+    padding-bottom: 72px;
+    text-align: center;
+    position: relative;
+}
+.food_list{
+    padding-bottom: 42px;
+}
+.food_list h3{
+    font-size: 21px;
+    color: #cc9900;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+    padding-bottom: 26px;
+    position: relative;
+}
+
+.price_text h2::after{
+    position: absolute;
+    content: '';
+    background: url(../images/nt.png) no-repeat;
+    left: 22%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+}
+.food_list h3::after{
+    position: absolute;
+    content: '';
+    background:#ddcf9c ;
+    left: 0;
+    top: 33px;
+    width: 430px;
+    height:1px;
+}
+.food_list p{
+    font-size: 16px;
+    color: #4c4c4c;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+/* .price_col:nth-child(7),
+.price_col:nth-child(14){
+    padding-bottom: 0;
+} */
+/* .special{
+    border: 1px solid #ddcf9c;
+} */
+/* =========================================
+               Price Part End
+========================================= */
+
+
+/* =========================================
+               Guest Part Start
+========================================= */
+#guest{
+    padding: 80px 0;
+    background: url(../images/banner_4.jpg) no-repeat center/cover;
+}
+.reviwe_cont{
+    display: flex;
+    justify-content: center;
+}
+.reviwe{
+    padding: 80px 80px;
+    width: 770px;
+    background:rgba(0, 0, 0, 0.6);
+}
+.reviwe_text h2{
+    color: #ffff;
+    font-size: 36px;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 76px;
+}
+.reviwe_text p{
+    color: #ffff;
+    font-size: 25px;
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: center;
+    
+}
+span{
+    color: #ffff;
+    font-size: 69px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+
+}
+/* =========================================
+               Guest Part End
+========================================= */
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+               Menu Part Start
+========================================= */
+/* =========================================
+               Menu Part End
+========================================= */
+/* =========================================
+               Menu Part Start
+========================================= */
+/* =========================================
+               Menu Part End
+========================================= */
+/* =========================================
+               Menu Part Start
+========================================= */
+/* =========================================
+               Menu Part End
+========================================= */
+/* =========================================
+               Menu Part Start
+========================================= */
+/* =========================================
+               Menu Part End
+========================================= */
